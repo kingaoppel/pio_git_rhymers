@@ -1,13 +1,16 @@
 package edu.kis.vh.nursery;
 
 public class DefaultCountingOutRhymer {
+    public int getTotal() {
+        return total;
+    }
 
     public static final int ERROR_CODE = -1;
     public static final int ARRAY_SIZE = 12;
 
     private final int[] numbers = new int[ARRAY_SIZE];
 
-    public int total = ERROR_CODE;
+    private int total = ERROR_CODE;
 
     public void countIn(int in) {
         if (!isFull())
